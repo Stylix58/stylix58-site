@@ -5,6 +5,7 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <div id="app">
@@ -12,54 +13,17 @@
 
     <v-app-bar
       app
-      color="indigo"
       dark
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title>Stylix58 Official Website</v-toolbar-title>
     </v-app-bar>
 
-    <v-main>
-    
-        <v-app-bar
-          app
-          clipped-left
-        >
-          <v-toolbar-title style="text-align: center;">Stylix58 Official Website</v-toolbar-title>
-        </v-app-bar>
-    
         <v-main>
-          <v-container
-            class="fill-height"
-            fluid
-          >
-            <v-row
-              align="center"
-              justify="center"
-            >
-              <v-col class="shrink">
-                <v-tooltip right>
-                  <template v-slot:activator="{ on }">
-                    <v-btn
-                      :href="source"
-                      icon
-                      large
-                      target="_blank"
-                      v-on="on"
-                    >
-                      <v-icon large>mdi-code-tags</v-icon>
-                    </v-btn>
-                  </template>
-                  <span>Source</span>
-                </v-tooltip>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-main>
-    
+        <p>Error 404</p>
         <v-footer app>
           <span>&copy; {{ new Date().getFullYear() }}, Stylix58</span>
         </v-footer>
+        </v-main>
       </v-app>
     </v-app>
 
